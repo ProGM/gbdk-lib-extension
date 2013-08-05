@@ -12,7 +12,10 @@ FEATURES
 ==================
 
 -Export png\bmp\jpeg\tiff images to efficient assembly and C code for GBDK.
+
 -Create maps starting from a "tileset", exporting both a tileset and the map in assembly code.
+
 -Various functions to setup metasprites. Metasprites are sets of sprites that can be moved all together to simulate the existance a bigger sprite.
+
 -An improved set_bkg_data to load RLE compressed tilesets.
 
