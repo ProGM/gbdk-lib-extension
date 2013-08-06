@@ -3,6 +3,8 @@ gbdk-lib-extension
 
 A small set of sources and tools for the Gameboy Development Kit by Michael Hope
 
+http://gbdk.sourceforge.net/
+
 
 It includes a Java application to export images to sprites and background in gbdk and some C sources, adding some useful functions to the gbdk library.
 
