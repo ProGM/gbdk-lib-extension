@@ -9,7 +9,8 @@ http://gbdk.sourceforge.net/
 It includes a Java application to export images to sprites and background in gbdk and some C sources, adding some useful functions to the gbdk library.
 
 
-==================
+
+
 FEATURES
 ==================
 
@@ -30,3 +31,7 @@ C LIBRARY:
 
 -An improved set_bkg_data to load RLE compressed tilesets.
 
+
+
+Here's a sample game that uses this library:
+https://github.com/ProGM/doctorhow
