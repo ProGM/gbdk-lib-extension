@@ -14,14 +14,14 @@
 *
 */
 
-#include "chara_utils.c"
+#include "chara_utils.h"
 
 static UBYTE _cu_id, _cu_x, _cu_y, _cu_i, _cu_qy, _cu_mode, _cu_size, _cu_size2;
 
-UINT8 loadSpriteGraphics(const unsigned char * chara , UINT8 size) {
+UINT8 loadSpriteGraphics(const unsigned char * chara , UINT8 size) {
 	_cu_id = last_memory_id;
 	set_sprite_data(last_memory_id, size, chara);
-	last_memory_id += _size_;
+	last_memory_id += size;
 	return _cu_id;
 }
 
@@ -81,7 +81,6 @@ void moveSprite(UBYTE id, UBYTE x, UBYTE y, UBYTE width, UBYTE height) {
 	_cu_y = 0;
 	_cu_size = width * height;
 	if (LCDC_REG & 0x04U) {
-		//_cu_mode = 2;
 		_cu_size = _cu_size>>1;
 		_cu_qy = 16;
 	}
